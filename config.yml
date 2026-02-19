@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: Matoomxxxnx/Meenpro   # ✅ แก้ตรงนี้ให้ตรง
+  branch: main                # ถ้า repo คุณเป็น master ให้เปลี่ยนเป็น master
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "members"
+    label: "Members"
+    files:
+      - name: "members_json"
+        label: "Members List"
+        file: "members.json"
+        format: "json"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "select", options: ["Founder","Leader","Member","Partner"] }
+              - { label: "Rank Order", name: "rank_order", widget: "number", value_type: "int", default: 999 }
+              - { label: "Image URL", name: "image_url", widget: "string", required: false }
+              - { label: "Social Link", name: "social_link", widget: "string", required: false }
