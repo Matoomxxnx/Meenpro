@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "members"
+    label: "Members"
+    files:
+      - name: "members_json"
+        label: "Members List"
+        file: "public/members.json"
+        format: "json"
+        fields:
+          - { label: "Founders", name: "founders", widget: "list", fields: [
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Facebook", name: "facebook", widget: "string", required: false},
+              {label: "Avatar", name: "avatar", widget: "image", required: false}
+            ] }
+          - { label: "Leaders", name: "leaders", widget: "list", fields: [
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Facebook", name: "facebook", widget: "string", required: false},
+              {label: "Avatar", name: "avatar", widget: "image", required: false}
+            ] }
+          - { label: "Members", name: "members", widget: "list", fields: [
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Facebook", name: "facebook", widget: "string", required: false},
+              {label: "Avatar", name: "avatar", widget: "image", required: false}
+            ] }
