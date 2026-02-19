@@ -1,0 +1,23 @@
+{
+  "founders": [
+    {
+      "name": "Piriya Wellesley",
+      "facebook": "https://facebook.com/",
+      "avatar": "/uploads/avatar1.png"
+    }
+  ],
+  "leaders": [
+    {
+      "name": "Belive Kodomo",
+      "facebook": "https://facebook.com/",
+      "avatar": "/uploads/avatar2.png"
+    }
+  ],
+  "members": [
+    {
+      "name": "Meen Wellesley",
+      "facebook": "https://facebook.com/",
+      "avatar": "/uploads/avatar3.png"
+    }
+  ]
+}
