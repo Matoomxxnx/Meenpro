@@ -1,0 +1,59 @@
+body.dark {
+  background: #0f0f0f;
+  color: white;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111;
+  border-bottom: 1px solid #333;
+}
+
+nav a, nav button {
+  color: white;
+  background: none;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.container {
+  padding: 40px;
+}
+
+.login-box {
+  width: 300px;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  background: #222;
+  border: 1px solid #333;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}

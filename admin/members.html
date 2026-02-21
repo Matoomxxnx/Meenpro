@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>จัดการสมาชิก</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="dark">
+
+<nav>
+  <h2>MEENPRO Admin</h2>
+  <div>
+    <a href="index.html">Dashboard</a>
+    <button onclick="logout()">Logout</button>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>สมาชิก</h1>
+  <input type="text" id="search" placeholder="ค้นหาชื่อ..." onkeyup="searchMembers()">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>ชื่อ</th>
+        <th>เบอร์</th>
+        <th>ลบ</th>
+      </tr>
+    </thead>
+    <tbody id="memberTable"></tbody>
+  </table>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
