@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "db"
+    label: "Database"
+    files:
+      - name: "members"
+        label: "Members"
+        file: "members.json"
+        format: "json"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string", required: false }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "select", options: ["Founder","Leader","Member","Partner"] }
+              - { label: "Rank Order", name: "rank_order", widget: "number", value_type: "int", default: 999 }
+              - { label: "Image URL", name: "image_url", widget: "string", required: false }
+              - { label: "Social Link", name: "social_link", widget: "string", required: false }
